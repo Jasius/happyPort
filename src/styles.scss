@@ -1,0 +1,35 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  outline: 1px solid pink;
+}
+
+header, footer {
+  text-align: center;
+}
+
+.primaryDescription {
+  background: #f38181;
+  color: #eee;
+  padding: 15px;
+  margin: 3vw;
+  border-radius: 3px;
+}
+
+.highlight {
+  color: #95e1d3;
+  font-weight: bold;
+}
+
+.specialization {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3vw;
+  div {
+    flex: 2 50%;
+    text-align: left;
+    &:nth-child(5) {
+      text-align: center;
+    }
+  }
+}
