@@ -27,6 +27,7 @@ document.getElementById("app").innerHTML = `
 <div class="specialization">
 ${currentProfile}
 </div>
+<button onClick="">Contact me!</button>
 </header>
 <footer>
 <span>${copyrightYear}</span>

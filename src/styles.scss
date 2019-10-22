@@ -8,6 +8,35 @@ header, footer {
   text-align: center;
 }
 
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  -webkit-appearance: none;
+  color: #f38181;
+  border: 3px solid #f38181;
+  padding: 8px;
+  margin: 10px;
+&:hover {
+  background: #f38181;
+  color: #eee;
+}
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+}
+
+
+
 .primaryDescription {
   background: #f38181;
   color: #eee;
