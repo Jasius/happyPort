@@ -5,10 +5,10 @@
   },
   "primaryDescription": "Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring",
   "socialLinks": {
-    "linkedin": "",
-    "twitter": "",
-    "stackoverflow": "",
-    "facebook": ""
+    "linkedin": "f",
+    "twitter": "t",
+    "stackoverflow": "a",
+    "facebook": "v"
   },
   "specialization": {
     "currentCompany": "Bing",
@@ -18,6 +18,6 @@
     "hobbies": ["Dancing", "Fishing"]
   },
   "footer": {
-    "initialWebsiteSetupYear": "2019"
+    "initialWebsiteSetupYear": 2019
   }
 }
