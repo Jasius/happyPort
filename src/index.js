@@ -38,6 +38,9 @@ function socialProfiles() {
       case "twitter":
         profileIcon = "twitter";
         break;
+      case "instagram":
+        profileIcon = "instagram";
+        break;
       default:
         profileIcon = "question-circle";
     }
