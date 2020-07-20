@@ -23,8 +23,7 @@ function form () {
                             <div className="my-2 bg-white p-1 flex border border-gray-200 rounded">  <textarea placeholder="Hi there!" className="p-1 px-2 appearance-none outline-none w-full text-gray-800" />  </div>
                         </div>
                         <div className="mt-6 relative">
-                            <button className="font-medium py-2 px-4 text-white
-                  cursor-pointer bg-blue-500 rounded text-lg tr-mt  absolute text-center w-full" type="submit">Submit</button>
+                            <button className="font-medium py-2 px-4 text-white bg-blue-500 rounded text-lg tr-mt absolute text-center w-full cursor-not-allowed" disabled type="submit">Submit</button>
                         </div>
                     </form>
                 </div>
