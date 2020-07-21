@@ -1,21 +1,9 @@
 import React, { Component } from 'react';
 import Modal from 'react-modal';
 
-const modals = ['modals[1]', 'modals[0]']
+const modals = ['modals[1]', 'modals[0]', 'modals[2]', 'modals[3]']
 
 const DEFAULT_TITLE = 'Default title';
-
-
-const customStyles = {
-    content: {
-        top: '50%',
-        left: '50%',
-        right: 'auto',
-        bottom: 'auto',
-        // marginRight: '-50%',
-        transform: 'translate(-50%, -50%)'
-    }
-};
 
 class Projects extends Component {
     componentDidMount () {
@@ -83,17 +71,55 @@ class Projects extends Component {
                                             </div>
                                         </a>
                                     </div>
-                                    <Modal
-                                        style={customStyles}
+                                    <Modal className="main-modal fixed w-full h-100 inset-0 z-50 overflow-hidden flex justify-center items-center animated faster fadeIn"
                                         isOpen={currentModal == modals[1]}
                                         onAfterOpen={this.handleOnAfterOpenModal}
                                         onRequestClose={this.handleModalCloseRequest}>
-                                        <button className="float-right" onClick={this.toggleModal(modals[1])}>x</button>
-                                        <h1 className="text-3xl font-semibold text-gray-800">Bazaarvoice</h1>
-                                        <p>Internal tools developer & QA Engineer</p>
-                                        <p>Vilnius, Lithuania</p>
-                                        <p>Bazaarvoice is a digital marketing company. It provides software that allows retailers to add customer reviews to their websites. Bazaarvoice is third biggest company in the world by CGC, behind Google and Facebook.</p>
-                                        <ul className="list-disc ml-4"><li>Developed internal automation tool, scripts, extensions for QA team.</li><li>Leading QA team work distribution and estimation.</li><li>Supporting co-workers with technical knowledge and eliminating manual work programmatically wherever possible.</li><li>Contributing to various internal projects outside of my scope during free time.</li><li>Introduced new tab extension which provides various teams personalized tools and shortcuts to make jumping between tools a lot easier.</li><li>Extensive Jira, JQL support for QA and surrounding teams.</li></ul>
+                                        <div className="border border-teal-500 shadow-lg modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
+                                            <div className="modal-content py-4 text-left px-6">
+                                                <div className="flex items-center w-full">
+                                                    <div className="text-gray-900 font-medium text-lg">Bazaarvoice</div>
+                                                    <svg className="ml-auto fill-current text-gray-700 w-6 h-6 cursor-pointer" onClick={this.toggleModal(modals[1])} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+                                                        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+                                                    </svg>
+                                                </div>
+                                                <p>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" className="inline align-text-top" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" />
+                                                    <line x1="3" y1="21" x2="21" y2="21" />
+                                                    <line x1="9" y1="8" x2="10" y2="8" />
+                                                    <line x1="9" y1="12" x2="10" y2="12" />
+                                                    <line x1="9" y1="16" x2="10" y2="16" />
+                                                    <line x1="14" y1="8" x2="15" y2="8" />
+                                                    <line x1="14" y1="12" x2="15" y2="12" />
+                                                    <line x1="14" y1="16" x2="15" y2="16" />
+                                                    <path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16" />
+                                                </svg> Internal tools developer & QA Engineer</p>
+                                                <p>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" className="inline align-text-top" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path stroke="none" d="M0 0h24v24H0z" />
+                                                        <circle cx="12" cy="11" r="3" />
+                                                        <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 0 1 -2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z" />
+                                                    </svg> Vilnius, Lithuania</p>
+                                                <br></br>
+                                                <div class="text-gray-900 font-medium text-lg">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" className="inline align-text-top" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path stroke="none" d="M0 0h24v24H0z" />
+                                                        <circle cx="12" cy="12" r="9" />
+                                                        <line x1="12" y1="8" x2="12.01" y2="8" />
+                                                        <polyline points="11 12 12 12 12 16 13 16" />
+                                                    </svg> About company</div>
+                                                <p>Bazaarvoice is a digital marketing company. It provides software that allows retailers to add customer reviews to their websites. Bazaarvoice is third biggest company in the world by CGC, behind Google and Facebook.</p>
+                                                <br></br>
+                                                <div class="text-gray-900 font-medium text-lg">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" className="inline align-text-top" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path stroke="none" d="M0 0h24v24H0z" />
+                                                        <path d="M12 17.75l-6.172 3.245 1.179-6.873-4.993-4.867 6.9-1.002L12 2l3.086 6.253 6.9 1.002-4.993 4.867 1.179 6.873z" />
+                                                    </svg> Highlights</div>
+                                                <ul className="list-disc ml-4"><li>Developed internal automation tool, scripts, extensions for QA team.</li><li>Leading QA team work distribution and estimation.</li><li>Supporting co-workers with technical knowledge and eliminating manual work programmatically wherever possible.</li><li>Contributing to various internal projects outside of my scope during free time.</li><li>Introduced new tab extension which provides various teams personalized tools and shortcuts to make jumping between tools a lot easier.</li><li>Extensive Jira, JQL support for QA and surrounding teams.</li></ul>
+
+                                            </div>
+                                        </div>
                                     </Modal>
                                 </div>
                                 <div className="flex items-center justify-center mt-10">
@@ -109,15 +135,56 @@ class Projects extends Component {
                                                 </div>
                                             </a>
                                         </div>
-                                        <Modal
-                                            style={customStyles}
+                                        <Modal className="main-modal fixed w-full h-100 inset-0 z-50 overflow-hidden flex justify-center items-center animated faster fadeIn"
                                             isOpen={currentModal == modals[0]}
                                             onAfterOpen={this.handleOnAfterOpenModal}
                                             onRequestClose={this.toggleModal(modals[0])}>
-                                            <p>Omnisend</p>
-                                            <button onClick={this.toggleModal(modals[0])}>close</button>
+                                            <div className="border border-teal-500 shadow-lg modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
+                                                <div className="modal-content py-4 text-left px-6">
+                                                    <div className="flex items-center w-full">
+                                                        <div className="text-gray-900 font-medium text-lg">Omnisend</div>
+                                                        <svg className="ml-auto fill-current text-gray-700 w-6 h-6 cursor-pointer" onClick={this.toggleModal(modals[0])} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+                                                            <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+                                                        </svg>
+                                                    </div>
+                                                    <p>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" className="inline align-text-top" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z" />
+                                                            <line x1="3" y1="21" x2="21" y2="21" />
+                                                            <line x1="9" y1="8" x2="10" y2="8" />
+                                                            <line x1="9" y1="12" x2="10" y2="12" />
+                                                            <line x1="9" y1="16" x2="10" y2="16" />
+                                                            <line x1="14" y1="8" x2="15" y2="8" />
+                                                            <line x1="14" y1="12" x2="15" y2="12" />
+                                                            <line x1="14" y1="16" x2="15" y2="16" />
+                                                            <path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16" />
+                                                        </svg> Front end developer</p>
+                                                    <p>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" className="inline align-text-top" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z" />
+                                                            <circle cx="12" cy="11" r="3" />
+                                                            <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 0 1 -2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z" />
+                                                        </svg> Vilnius, Lithuania</p>
+                                                    <br></br>
+                                                    <div class="text-gray-900 font-medium text-lg">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" className="inline align-text-top" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z" />
+                                                            <circle cx="12" cy="12" r="9" />
+                                                            <line x1="12" y1="8" x2="12.01" y2="8" />
+                                                            <polyline points="11 12 12 12 12 16 13 16" />
+                                                        </svg> About company</div>
+                                                    <p>Powerful email marketing platform for eCommerce. Helps you to convert the visitors of your online store and retain your customers.</p>
+                                                    <br></br>
+                                                    <div class="text-gray-900 font-medium text-lg">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" className="inline align-text-top" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z" />
+                                                            <path d="M12 17.75l-6.172 3.245 1.179-6.873-4.993-4.867 6.9-1.002L12 2l3.086 6.253 6.9 1.002-4.993 4.867 1.179 6.873z" />
+                                                        </svg> Highlights</div>
+                                                    <ul className="list-disc ml-4"><li>Localized Omnisend service and took of ownership of internationalization.</li><li>Contributed to development of front facing marketing website and its campaigns.</li><li>Helped out co-workers with technical support queries internally.</li></ul>
+                                                </div>
+                                            </div>
                                         </Modal>
-                                        <div className="max-w-xs w-full transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 cursor-pointer">
+                                        <div onClick={this.toggleModal(modals[2])} className="max-w-xs w-full transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 cursor-pointer">
                                             <div className="flex items-center justify-center  bg-white  overflow-hidden">
                                                 <img className="object-cover " src="https://jaska.dev/w10.b2283865.png" alt="" />
                                             </div>
@@ -128,7 +195,56 @@ class Projects extends Component {
                                                 </div>
                                             </a>
                                         </div>
-                                        <div className="max-w-xs w-full transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 cursor-pointer">
+                                        <Modal className="main-modal fixed w-full h-100 inset-0 z-50 overflow-hidden flex justify-center items-center animated faster fadeIn"
+                                            isOpen={currentModal == modals[2]}
+                                            onAfterOpen={this.handleOnAfterOpenModal}
+                                            onRequestClose={this.toggleModal(modals[2])}>
+                                            <div className="border border-teal-500 shadow-lg modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
+                                                <div className="modal-content py-4 text-left px-6">
+                                                    <div className="flex items-center w-full">
+                                                        <div className="text-gray-900 font-medium text-lg">Microsoft Community</div>
+                                                        <svg className="ml-auto fill-current text-gray-700 w-6 h-6 cursor-pointer" onClick={this.toggleModal(modals[2])} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+                                                            <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+                                                        </svg>
+                                                    </div>
+                                                    <p>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" className="inline align-text-top" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z" />
+                                                            <line x1="3" y1="21" x2="21" y2="21" />
+                                                            <line x1="9" y1="8" x2="10" y2="8" />
+                                                            <line x1="9" y1="12" x2="10" y2="12" />
+                                                            <line x1="9" y1="16" x2="10" y2="16" />
+                                                            <line x1="14" y1="8" x2="15" y2="8" />
+                                                            <line x1="14" y1="12" x2="15" y2="12" />
+                                                            <line x1="14" y1="16" x2="15" y2="16" />
+                                                            <path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16" />
+                                                        </svg> Lead developer & Community manager</p>
+                                                    <p>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" className="inline align-text-top" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z" />
+                                                            <circle cx="12" cy="11" r="3" />
+                                                            <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 0 1 -2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z" />
+                                                        </svg> Ignalina, Lithuania</p>
+                                                    <br></br>
+                                                    <div class="text-gray-900 font-medium text-lg">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" className="inline align-text-top" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z" />
+                                                            <circle cx="12" cy="12" r="9" />
+                                                            <line x1="12" y1="8" x2="12.01" y2="8" />
+                                                            <polyline points="11 12 12 12 12 16 13 16" />
+                                                        </svg> About project</div>
+                                                    <p>Community which is hosted on Reddit (design part), Discord platforms for Microsoft products and services enthusiasts.</p>
+                                                    <br></br>
+                                                    <div class="text-gray-900 font-medium text-lg">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" className="inline align-text-top" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z" />
+                                                            <path d="M12 17.75l-6.172 3.245 1.179-6.873-4.993-4.867 6.9-1.002L12 2l3.086 6.253 6.9 1.002-4.993 4.867 1.179 6.873z" />
+                                                        </svg> Highlights</div>
+                                                    <ul className="list-disc ml-4"><li>Lead developer for the community.</li><li>Verified Microsoft employees, journalists and prominent developers so that they can engage with the community on official capacity.</li><li>Recruited and mentored moderators for the community.</li><li>Theme without community specific branding got installed on over 1,900 communities since March of 2017 and due to that it was seen by thousands of users monthly.</li><li>Helping out people to install theme on their communities.</li></ul>
+                                                </div>
+                                            </div>
+                                        </Modal>
+                                        <div onClick={this.toggleModal(modals[3])} className="max-w-xs w-full transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 cursor-pointer">
                                             <div className="flex items-center justify-center  bg-white  overflow-hidden">
                                                 <img className="object-cover " src="https://jaska.dev/bookie.8ad5942a.png" alt="" />
                                             </div>
@@ -139,6 +255,55 @@ class Projects extends Component {
                                                 </div>
                                             </a>
                                         </div>
+                                        <Modal className="main-modal fixed w-full h-100 inset-0 z-50 overflow-hidden flex justify-center items-center animated faster fadeIn"
+                                            isOpen={currentModal == modals[3]}
+                                            onAfterOpen={this.handleOnAfterOpenModal}
+                                            onRequestClose={this.toggleModal(modals[3])}>
+                                            <div className="border border-teal-500 shadow-lg modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
+                                                <div className="modal-content py-4 text-left px-6">
+                                                    <div className="flex items-center w-full">
+                                                        <div className="text-gray-900 font-medium text-lg">Bookie.GG</div>
+                                                        <svg className="ml-auto fill-current text-gray-700 w-6 h-6 cursor-pointer" onClick={this.toggleModal(modals[3])} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+                                                            <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+                                                        </svg>
+                                                    </div>
+                                                    <p>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" className="inline align-text-top" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z" />
+                                                            <line x1="3" y1="21" x2="21" y2="21" />
+                                                            <line x1="9" y1="8" x2="10" y2="8" />
+                                                            <line x1="9" y1="12" x2="10" y2="12" />
+                                                            <line x1="9" y1="16" x2="10" y2="16" />
+                                                            <line x1="14" y1="8" x2="15" y2="8" />
+                                                            <line x1="14" y1="12" x2="15" y2="12" />
+                                                            <line x1="14" y1="16" x2="15" y2="16" />
+                                                            <path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16" />
+                                                        </svg> Junior web designer & Community manager</p>
+                                                    <p>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" className="inline align-text-top" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z" />
+                                                            <circle cx="12" cy="11" r="3" />
+                                                            <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 0 1 -2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z" />
+                                                        </svg> Remote, Lithuania</p>
+                                                    <br></br>
+                                                    <div class="text-gray-900 font-medium text-lg">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" className="inline align-text-top" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z" />
+                                                            <circle cx="12" cy="12" r="9" />
+                                                            <line x1="12" y1="8" x2="12.01" y2="8" />
+                                                            <polyline points="11 12 12 12 12 16 13 16" />
+                                                        </svg> About project</div>
+                                                    <p>E-sports betting service which allows you to bet Counter-Strike: Global Offensive weapon skins on CS:GO e-sports matches.</p>
+                                                    <br></br>
+                                                    <div class="text-gray-900 font-medium text-lg">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" className="inline align-text-top" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z" />
+                                                            <path d="M12 17.75l-6.172 3.245 1.179-6.873-4.993-4.867 6.9-1.002L12 2l3.086 6.253 6.9 1.002-4.993 4.867 1.179 6.873z" />
+                                                        </svg> Highlights</div>
+                                                    <ul className="list-disc ml-4"><li>Supporting developer on the design team.</li><li>Designer and community manager on community forum.</li><li>Tester for our partner's e-sports statistics mobile application.</li></ul>
+                                                </div>
+                                            </div>
+                                        </Modal>
                                     </div>
                                 </div>
                             </div>
