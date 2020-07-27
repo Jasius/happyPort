@@ -12,15 +12,15 @@ function form () {
                     <form className="flex-auto max-w-sm p-8 pb-20" name="contact" data-netlify="true">
                         <div className="w-full">
                             <div className="font-bold h-6 mt-3 text-gray-600 text-xs leading-8 uppercase"><span className="text-red-400 mr-1">*</span> First Name</div>
-                            <div className="my-2 bg-white p-1 flex border border-gray-200 rounded">  <input placeholder="John Doe" name="name" className="p-1 px-2 appearance-none outline-none w-full text-gray-800" />  </div>
+                            <div className="my-2 bg-white p-1 flex border border-gray-300 rounded">  <input placeholder="John Doe" name="name" className="p-1 px-2 appearance-none outline-none w-full text-gray-800" />  </div>
                         </div>
                         <div className="w-full">
                             <div className="font-bold h-6 mt-3 text-gray-600 text-xs leading-8 uppercase"><span className="text-red-400 mr-1" name="email">*</span> Email</div>
-                            <div className="my-2 bg-white p-1 flex border border-gray-200 rounded">  <input placeholder="JohnDoe@Outlook.com" className="p-1 px-2 appearance-none outline-none w-full text-gray-800" />  </div>
+                            <div className="my-2 bg-white p-1 flex border border-gray-300 rounded">  <input placeholder="JohnDoe@Outlook.com" className="p-1 px-2 appearance-none outline-none w-full text-gray-800" />  </div>
                         </div>
                         <div className="w-full">
                             <div className="font-bold h-6 mt-3 text-gray-600 text-xs leading-8 uppercase"><span className="text-red-400 mr-1" name="message">*</span> Message</div>
-                            <div className="my-2 bg-white p-1 flex border border-gray-200 rounded">  <textarea placeholder="Hi there!" className="p-1 px-2 appearance-none outline-none w-full text-gray-800" />  </div>
+                            <div className="my-2 bg-white p-1 flex border border-gray-300 rounded">  <textarea placeholder="Hi there!" className="p-1 px-2 appearance-none outline-none w-full text-gray-800" />  </div>
                         </div>
                         <div className="mt-6 relative">
                             <button className="font-medium py-2 px-4 text-white bg-blue-500 rounded text-lg tr-mt absolute text-center w-full cursor-not-allowed" disabled type="submit">Submit</button>
