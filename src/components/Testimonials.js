@@ -8,7 +8,7 @@ function Testimonials () {
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
                 <div class="max-w-md px-8 bg-white shadow-lg rounded-lg py-10">
                     <div class="flex justify-center">
-                        <img class="w-20 h-20 object-cover rounded-full border-2 border-indigo-500" src="https://jaska.dev/elvyraS.e50bb4df.png" />
+                        <img class="w-20 h-20 object-cover rounded-full border-2 border-blue-600" src="https://jaska.dev/elvyraS.e50bb4df.png" />
                     </div>
                     <div>
                         <h2 class="text-gray-800 text-2xl font-semibold"><svg xmlns="http://www.w3.org/2000/svg" class="inline align-baseline" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -28,7 +28,7 @@ function Testimonials () {
                 </div>
                 <div class="max-w-md px-8 bg-white shadow-lg rounded-lg py-10">
                     <div class="flex justify-center">
-                        <img class="w-20 h-20 object-cover rounded-full border-2 border-indigo-500" src="https://jaska.dev/tomasS.0a6948d5.jpg" />
+                        <img class="w-20 h-20 object-cover rounded-full border-2 border-blue-600" src="https://jaska.dev/tomasS.0a6948d5.jpg" />
                     </div>
                     <div>
                         <h2 class="text-gray-800 text-2xl font-semibold"><svg xmlns="http://www.w3.org/2000/svg" class="inline align-baseline" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -48,7 +48,7 @@ function Testimonials () {
                 </div>
                 <div class="max-w-md px-8 bg-white shadow-lg rounded-lg py-10">
                     <div class="flex justify-center">
-                        <img class="w-20 h-20 object-cover rounded-full border-2 border-indigo-500" src={justeImg} />
+                        <img class="w-20 h-20 object-cover rounded-full border-2 border-blue-600" src={justeImg} />
                     </div>
                     <div>
                         <h2 class="text-gray-800 text-2xl font-semibold"><svg xmlns="http://www.w3.org/2000/svg" class="inline align-baseline" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
