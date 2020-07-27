@@ -65,9 +65,9 @@ class Projects extends Component {
                                             <img class="object-cover" src="https://jaska.dev/bazaarvoice.618d8db4.png" alt="" />
                                         </div>
                                         <a class="block bg-secondaryBlue rounded-b overflow-hidden ">
-                                            <div class="py-2 px-3 text-center text-sm">
-                                                <p class="text-gray-300">Bazaarvoice - digital marketing company</p>
-                                                <span class="block text-gray-500 mt-2">Internal tools developer & QA Engineer</span>
+                                            <div class="py-4 px-3 text-center text-sm">
+                                                <p class="text-gray-300 text-xl font-semibold">Bazaarvoice - Digital marketing</p>
+                                                <span class="block text-gray-500">Internal tools developer & QA Engineer</span>
                                             </div>
                                         </a>
                                     </div>
@@ -129,9 +129,9 @@ class Projects extends Component {
                                                 <img className="object-cover " src="https://jaska.dev/omnisend.bec1be09.png" alt="" />
                                             </div>
                                             <a className="block bg-secondaryBlue rounded-b overflow-hidden ">
-                                                <div className="py-2 px-3 text-center text-sm">
-                                                    <p className="text-gray-300">Omnisend - eCommerce marketing platform</p>
-                                                    <span className="block text-gray-500 mt-2">Front end developer</span>
+                                                <div className="py-4 px-3 text-center text-sm">
+                                                    <p className="text-gray-300 text-base font-semibold">Omnisend - Ecommerce marketing</p>
+                                                    <span className="block text-gray-500">Front end developer</span>
                                                 </div>
                                             </a>
                                         </div>
@@ -189,9 +189,9 @@ class Projects extends Component {
                                                 <img className="object-cover " src="https://jaska.dev/w10.b2283865.png" alt="" />
                                             </div>
                                             <a className="block bg-secondaryBlue rounded-b overflow-hidden ">
-                                                <div className="py-2 px-3 text-center text-sm">
-                                                    <p className="text-gray-300">Microsoft Community - Social platform</p>
-                                                    <span className="block text-gray-500 mt-2">Lead developer & Community manager</span>
+                                                <div className="py-4 px-3 text-center text-sm">
+                                                    <p className="text-gray-300 text-base font-semibold">Microsoft Community - Social platform</p>
+                                                    <span className="block text-gray-500">Lead developer & Community manager</span>
                                                 </div>
                                             </a>
                                         </div>
@@ -249,9 +249,9 @@ class Projects extends Component {
                                                 <img className="object-cover " src="https://jaska.dev/bookie.8ad5942a.png" alt="" />
                                             </div>
                                             <a className="block bg-secondaryBlue rounded-b overflow-hidden ">
-                                                <div className="py-2 px-3 text-center text-sm">
-                                                    <p className="text-gray-300">Bookie.GG - Gambling platform</p>
-                                                    <span className="block text-gray-500 mt-2">Junior web designer & Community manager</span>
+                                                <div className="py-4 px-3 text-center text-sm">
+                                                    <p className="text-gray-300 text-base font-semibold">Bookie.GG - Gambling platform</p>
+                                                    <span className="block text-gray-500">Junior web designer & Community manager</span>
                                                 </div>
                                             </a>
                                         </div>
