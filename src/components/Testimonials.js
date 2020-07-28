@@ -45,7 +45,7 @@ function Testimonials () {
                             <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
                         </svg> Juste S.</h2>
                         <h3 class="text-gray-800 text-1xl ">Delivery Ops Manager</h3>
-                        <p class="mt-4 italic text-gray-600">Welcome back to the BV family our number one IT talent, Mr. "Continuous improvement Jaska"!</p>
+                        <p class="mt-4 italic text-gray-600">Thank you for your endless ideas of innovation and valuable input for every initiative you come up with or stumble upon, but also for keeping the team spirits up with relentless humour and OC memes! What a gem of a personality you are!</p>
                     </div>
                 </div>
             </div>
