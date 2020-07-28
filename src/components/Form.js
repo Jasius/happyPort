@@ -3,7 +3,7 @@ import React from 'react';
 function form () {
     return (
         <div className="mx-auto max-w-6xl p-12">
-            <div className="shadow-md p-8 flex flex-col md:flex-row justify-center">
+            <div className="shadow-lg p-8 flex flex-col md:flex-row justify-center">
                 <div className="md:w-1/2 max-w-md flex flex-col justify-center">
                     <div className="md:text-4xl text-2xl font-black uppercase"><span className='bg-blue-500 text-white rounded px-1'>Seriously,</span> get in touch.</div>
                     <div className="text-xl mt-4">I am on the lookout for any kind of meaningful work. If you have something in mind or just want to say hi, drop me a line.</div>

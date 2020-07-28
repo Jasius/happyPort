@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Modal from 'react-modal';
+import omnisend from '../assets/img/omnisend.png'
 
 const modals = ['modals[1]', 'modals[0]', 'modals[2]', 'modals[3]']
 
@@ -60,7 +61,7 @@ class Projects extends Component {
                             <div className="max-w-5xl px-6 mx-auto text-center">
                                 <h2 className="text-4xl text-gray-300 font-semibold mb-10">Projects</h2>
                                 <div class="flex mb-4 mx-auto transition duration-500 ease-in-out transform hover:-translate-y-1">
-                                    <div onClick={this.toggleModal(modals[1])} class="w-full transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 cursor-pointer">
+                                    <div onClick={this.toggleModal(modals[1])} class="w-full transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 cursor-pointer shadow-lg">
                                         <div class="flex items-center justify-center  bg-white  overflow-hidden">
                                             <img class="object-cover" src="https://jaska.dev/bazaarvoice.618d8db4.png" alt="" />
                                         </div>
@@ -124,9 +125,9 @@ class Projects extends Component {
                                 </div>
                                 <div className="flex items-center justify-center mt-10">
                                     <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                                        <div onClick={this.toggleModal(modals[0])} className="max-w-xs w-full transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 cursor-pointer">
+                                        <div onClick={this.toggleModal(modals[0])} className="max-w-xs w-full transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 cursor-pointer shadow-lg">
                                             <div className="flex items-center justify-center  bg-white  overflow-hidden">
-                                                <img className="object-cover " src="https://jaska.dev/omnisend.bec1be09.png" alt="" />
+                                                <img className="object-cover " src={omnisend} alt="" />
                                             </div>
                                             <a className="block bg-secondaryBlue rounded-b overflow-hidden ">
                                                 <div className="py-4 px-3 text-center text-sm">
@@ -184,7 +185,7 @@ class Projects extends Component {
                                                 </div>
                                             </div>
                                         </Modal>
-                                        <div onClick={this.toggleModal(modals[2])} className="max-w-xs w-full transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 cursor-pointer">
+                                        <div onClick={this.toggleModal(modals[2])} className="max-w-xs w-full transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 cursor-pointer shadow-lg">
                                             <div className="flex items-center justify-center  bg-white  overflow-hidden">
                                                 <img className="object-cover " src="https://jaska.dev/w10.b2283865.png" alt="" />
                                             </div>
@@ -244,7 +245,7 @@ class Projects extends Component {
                                                 </div>
                                             </div>
                                         </Modal>
-                                        <div onClick={this.toggleModal(modals[3])} className="max-w-xs w-full transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 cursor-pointer">
+                                        <div onClick={this.toggleModal(modals[3])} className="max-w-xs w-full transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 cursor-pointer shadow-lg">
                                             <div className="flex items-center justify-center  bg-white  overflow-hidden">
                                                 <img className="object-cover " src="https://jaska.dev/bookie.8ad5942a.png" alt="" />
                                             </div>
