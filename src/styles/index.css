@@ -17,3 +17,7 @@
 .ReactModal__Body--open {
   overflow-y: hidden;
 }
+
+body {
+    background-image: url(http://scarbroughstudios.com/img/codepen.svg);
+}

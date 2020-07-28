@@ -6,7 +6,7 @@ function Testimonials () {
         <div className="max-w-5xl px-6 mx-auto text-center py-20">
             <h2 class="text-4xl text-gray-800 font-semibold mb-10">Testimonials</h2>
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                <div class="max-w-md px-8 bg-white shadow-lg rounded-lg py-10">
+                <div class="max-w-md px-8 bg-white shadow-lg rounded-lg py-10 bg-opacity-25">
                     <div class="flex justify-center">
                         <img class="w-20 h-20 object-cover rounded-full border-2 border-blue-600" src="https://jaska.dev/elvyraS.e50bb4df.png" />
                     </div>
@@ -20,7 +20,7 @@ function Testimonials () {
                         <p class="mt-4 italic text-gray-600">Thanks for sharing your superpowers!</p>
                     </div>
                 </div>
-                <div class="max-w-md px-8 bg-white shadow-lg rounded-lg py-10">
+                <div class="max-w-md px-8 bg-white shadow-lg rounded-lg py-10 bg-opacity-25">
                     <div class="flex justify-center">
                         <img class="w-20 h-20 object-cover rounded-full border-2 border-blue-600" src="https://jaska.dev/tomasS.0a6948d5.jpg" />
                     </div>
@@ -34,7 +34,7 @@ function Testimonials () {
                         <p class="mt-4 italic text-gray-600">Thank you for your help on building QA Automation tool.</p>
                     </div>
                 </div>
-                <div class="max-w-md px-8 bg-white shadow-lg rounded-lg py-10">
+                <div class="max-w-md px-8 bg-white shadow-lg rounded-lg py-10 bg-opacity-25">
                     <div class="flex justify-center">
                         <img class="w-20 h-20 object-cover rounded-full border-2 border-blue-600" src={justeImg} />
                     </div>

@@ -57,7 +57,7 @@ class Projects extends Component {
             <div>
                 <main className="font-sans">
                     <div>
-                        <section className="bg-primaryBlue pattern py-20">
+                        <section className="bg-primaryBlue bg-opacity-90 pattern py-20">
                             <div className="max-w-5xl px-6 mx-auto text-center">
                                 <h2 className="text-4xl text-gray-300 font-semibold mb-10">Projects</h2>
                                 <div class="flex mb-4 mx-auto transition duration-500 ease-in-out transform hover:-translate-y-1">
