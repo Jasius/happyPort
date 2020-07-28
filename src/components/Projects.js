@@ -75,8 +75,8 @@ class Projects extends Component {
                                         isOpen={currentModal == modals[1]}
                                         onAfterOpen={this.handleOnAfterOpenModal}
                                         onRequestClose={this.handleModalCloseRequest}>
-                                        <div className="border border-teal-500 shadow-lg modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
-                                            <div className="modal-content py-4 text-left px-6">
+                                        <div className="border bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
+                                            <div className="max-h-80 py-4 text-left px-6">
                                                 <div className="flex items-center w-full">
                                                     <div className="text-gray-900 font-medium text-lg">Bazaarvoice</div>
                                                     <svg className="ml-auto fill-current text-gray-700 w-6 h-6 cursor-pointer" onClick={this.toggleModal(modals[1])} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
@@ -85,16 +85,16 @@ class Projects extends Component {
                                                 </div>
                                                 <p>
                                                     <svg xmlns="http://www.w3.org/2000/svg" className="inline align-text-top" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                    <path stroke="none" d="M0 0h24v24H0z" />
-                                                    <line x1="3" y1="21" x2="21" y2="21" />
-                                                    <line x1="9" y1="8" x2="10" y2="8" />
-                                                    <line x1="9" y1="12" x2="10" y2="12" />
-                                                    <line x1="9" y1="16" x2="10" y2="16" />
-                                                    <line x1="14" y1="8" x2="15" y2="8" />
-                                                    <line x1="14" y1="12" x2="15" y2="12" />
-                                                    <line x1="14" y1="16" x2="15" y2="16" />
-                                                    <path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16" />
-                                                </svg> Internal tools developer & QA Engineer</p>
+                                                        <path stroke="none" d="M0 0h24v24H0z" />
+                                                        <line x1="3" y1="21" x2="21" y2="21" />
+                                                        <line x1="9" y1="8" x2="10" y2="8" />
+                                                        <line x1="9" y1="12" x2="10" y2="12" />
+                                                        <line x1="9" y1="16" x2="10" y2="16" />
+                                                        <line x1="14" y1="8" x2="15" y2="8" />
+                                                        <line x1="14" y1="12" x2="15" y2="12" />
+                                                        <line x1="14" y1="16" x2="15" y2="16" />
+                                                        <path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16" />
+                                                    </svg> Internal tools developer & QA Engineer</p>
                                                 <p>
                                                     <svg xmlns="http://www.w3.org/2000/svg" className="inline align-text-top" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                                         <path stroke="none" d="M0 0h24v24H0z" />
@@ -139,8 +139,8 @@ class Projects extends Component {
                                             isOpen={currentModal == modals[0]}
                                             onAfterOpen={this.handleOnAfterOpenModal}
                                             onRequestClose={this.toggleModal(modals[0])}>
-                                            <div className="border border-teal-500 shadow-lg modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
-                                                <div className="modal-content py-4 text-left px-6">
+                                            <div className="border  bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
+                                                <div className="max-h-80 py-4 text-left px-6">
                                                     <div className="flex items-center w-full">
                                                         <div className="text-gray-900 font-medium text-lg">Omnisend</div>
                                                         <svg className="ml-auto fill-current text-gray-700 w-6 h-6 cursor-pointer" onClick={this.toggleModal(modals[0])} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
@@ -199,8 +199,8 @@ class Projects extends Component {
                                             isOpen={currentModal == modals[2]}
                                             onAfterOpen={this.handleOnAfterOpenModal}
                                             onRequestClose={this.toggleModal(modals[2])}>
-                                            <div className="border border-teal-500 shadow-lg modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
-                                                <div className="modal-content py-4 text-left px-6">
+                                            <div className="border bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
+                                                <div className="max-h-80 py-4 text-left px-6">
                                                     <div className="flex items-center w-full">
                                                         <div className="text-gray-900 font-medium text-lg">Microsoft Community</div>
                                                         <svg className="ml-auto fill-current text-gray-700 w-6 h-6 cursor-pointer" onClick={this.toggleModal(modals[2])} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
@@ -259,8 +259,8 @@ class Projects extends Component {
                                             isOpen={currentModal == modals[3]}
                                             onAfterOpen={this.handleOnAfterOpenModal}
                                             onRequestClose={this.toggleModal(modals[3])}>
-                                            <div className="border border-teal-500 shadow-lg modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
-                                                <div className="modal-content py-4 text-left px-6">
+                                            <div className="border  bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
+                                                <div className="max-h-80 py-4 text-left px-6">
                                                     <div className="flex items-center w-full">
                                                         <div className="text-gray-900 font-medium text-lg">Bookie.GG</div>
                                                         <svg className="ml-auto fill-current text-gray-700 w-6 h-6 cursor-pointer" onClick={this.toggleModal(modals[3])} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
