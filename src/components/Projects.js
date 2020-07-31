@@ -41,7 +41,7 @@ class Projects extends Component {
 
     handleInputChange = e => {
         let text = e.target.value;
-        if (text == '') {
+        if (text === '') {
             text = DEFAULT_TITLE;
         }
         this.setState({ ...this.state, title1: text });
@@ -74,7 +74,7 @@ class Projects extends Component {
                                         </a>
                                     </div>
                                     <Modal className="main-modal fixed w-full h-100 inset-0 z-50 overflow-hidden flex justify-center items-center animated faster fadeIn"
-                                        isOpen={currentModal == modals[1]}
+                                        isOpen={currentModal === modals[1]}
                                         onAfterOpen={this.handleOnAfterOpenModal}
                                         onRequestClose={this.handleModalCloseRequest}>
                                         <div className="border bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
@@ -138,7 +138,7 @@ class Projects extends Component {
                                             </a>
                                         </div>
                                         <Modal className="main-modal fixed w-full h-100 inset-0 z-50 overflow-hidden flex justify-center items-center animated faster fadeIn"
-                                            isOpen={currentModal == modals[0]}
+                                            isOpen={currentModal === modals[0]}
                                             onAfterOpen={this.handleOnAfterOpenModal}
                                             onRequestClose={this.toggleModal(modals[0])}>
                                             <div className="border  bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
@@ -198,7 +198,7 @@ class Projects extends Component {
                                             </a>
                                         </div>
                                         <Modal className="main-modal fixed w-full h-100 inset-0 z-50 overflow-hidden flex justify-center items-center animated faster fadeIn"
-                                            isOpen={currentModal == modals[2]}
+                                            isOpen={currentModal === modals[2]}
                                             onAfterOpen={this.handleOnAfterOpenModal}
                                             onRequestClose={this.toggleModal(modals[2])}>
                                             <div className="border bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
@@ -258,7 +258,7 @@ class Projects extends Component {
                                             </a>
                                         </div>
                                         <Modal className="main-modal fixed w-full h-100 inset-0 z-50 overflow-hidden flex justify-center items-center animated faster fadeIn"
-                                            isOpen={currentModal == modals[3]}
+                                            isOpen={currentModal === modals[3]}
                                             onAfterOpen={this.handleOnAfterOpenModal}
                                             onRequestClose={this.toggleModal(modals[3])}>
                                             <div className="border  bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
