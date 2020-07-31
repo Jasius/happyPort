@@ -12,6 +12,7 @@ function form () {
                 </div>
                 <div className="md:w-1/2 flex justify-start mt-5 md:justify-end w-full md:w-1/2">
                     <form className="flex-auto max-w-sm p-8 pb-20" name="contact" method="post" data-netlify="true">
+                        <input type="hidden" name="contactForm" value="contact" />
                         <div className="w-full">
                             <div className="font-bold h-6 mt-3 text-gray-600 text-xs leading-8 uppercase">
                                 <span className="text-red-400 mr-1">*</span> First Name
