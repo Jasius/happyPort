@@ -11,7 +11,7 @@ function form () {
                     <div className="text-xl mt-4">I am on the lookout for any kind of meaningful work. If you have something in mind or just want to say hi, drop me a line.</div>
                 </div>
                 <div className="md:w-1/2 flex justify-start mt-5 md:justify-end w-full md:w-1/2">
-                    <form className="flex-auto max-w-sm p-8 pb-20" name="contact" action="/" method="post" data-netlify="true">
+                    <form className="flex-auto max-w-sm p-8 pb-20" name="contact" method="post" data-netlify="true">
                         <div className="w-full">
                             <div className="font-bold h-6 mt-3 text-gray-600 text-xs leading-8 uppercase">
                                 <span className="text-red-400 mr-1">*</span> First Name
