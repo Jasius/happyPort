@@ -11,9 +11,9 @@ function form () {
                 <div className="md:w-1/2 flex justify-start mt-5 md:justify-end w-full md:w-1/2">
                     <form className="flex-auto max-w-sm p-8 pb-20" name="contact" data-netlify="true">
                         <div className="w-full">
-                            <div className="font-bold h-6 mt-3 text-gray-600 text-xs leading-8 uppercase"><span className="text-red-400 mr-1">*</span> First Name</div>
-                            <div className="my-2 bg-white p-1 flex border border-gray-300 rounded">  <input placeholder="John Doe" name="name" className="p-1 px-2 appearance-none outline-none w-full text-gray-800" />  </div>
-                        </div>
+                            <div className="font-bold h-6 mt-3 text-gray-600 text-xs leading-8 uppercase">
+                                <span className="text-red-400 mr-1">*</span> First Name
+                            </div>
                         <div className="w-full">
                             <div className="font-bold h-6 mt-3 text-gray-600 text-xs leading-8 uppercase"><span className="text-red-400 mr-1" name="email">*</span> Email</div>
                             <div className="my-2 bg-white p-1 flex border border-gray-300 rounded">  <input placeholder="JohnDoe@Outlook.com" className="p-1 px-2 appearance-none outline-none w-full text-gray-800" />  </div>
