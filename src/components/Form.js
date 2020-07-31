@@ -11,8 +11,8 @@ function form () {
                     <div className="text-xl mt-4">I am on the lookout for any kind of meaningful work. If you have something in mind or just want to say hi, drop me a line.</div>
                 </div>
                 <div className="md:w-1/2 flex justify-start mt-5 md:justify-end w-full md:w-1/2">
-                    <form className="flex-auto max-w-sm p-8 pb-20" name="contact" method="post">
-                        <input type="hidden" name="contactForm" value="contact" />
+                    <form name="contact" method="post" className="flex-auto max-w-sm p-8 pb-20">
+                        <input type="hidden" name="form-name" value="contact" />
                         <div className="w-full">
                             <div className="font-bold h-6 mt-3 text-gray-600 text-xs leading-8 uppercase">
                                 <span className="text-red-400 mr-1">*</span> First Name
@@ -24,7 +24,7 @@ function form () {
                         <div className="w-full">
                             <div className="font-bold h-6 mt-3 text-gray-600 text-xs leading-8 uppercase">
                                 <span className="text-red-400 mr-1">*</span> Email
-                                </div>
+                            </div>
                             <div className="my-2 bg-white p-1 flex border border-gray-300 rounded">
                                 <input placeholder="JohnDoe@Outlook.com" type="email" name="email" className="p-1 px-2 appearance-none outline-none w-full text-gray-800" />
                             </div>
@@ -38,7 +38,7 @@ function form () {
                             </div>
                         </div>
                         <div className="mt-6 relative">
-                            <button className="font-medium py-2 px-4 text-white bg-blue-600 rounded text-lg tr-mt absolute text-center w-full hover:bg-blue-400 ease-in-out duration-200" type="submit">Submit</button>
+                            <button type="submit" className="font-medium py-2 px-4 text-white bg-blue-600 rounded text-lg tr-mt absolute text-center w-full hover:bg-blue-400 ease-in-out duration-200">Submit</button>
                         </div>
                     </form>
                 </div>
