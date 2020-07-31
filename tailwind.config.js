@@ -10,6 +10,9 @@ module.exports = {
         'secondaryBlue': '#2d3748',
         'accentYellow': '#ffc107',
       },
+      borderWidth: {
+        3: '3px',
+      },
       backgroundOpacity: {
         '90': '0.9'
       }

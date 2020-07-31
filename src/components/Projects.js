@@ -59,7 +59,8 @@ class Projects extends Component {
                     <div>
                         <section className="bg-primaryBlue bg-opacity-90 pattern py-20">
                             <div className="max-w-5xl px-6 mx-auto text-center">
-                                <h2 className="text-4xl text-gray-300 font-semibold mb-10">Projects</h2>
+                                <h2 className="text-4xl text-gray-300 font-semibold mb-2 cursor-default">Projects</h2>
+                                <div class="mx-auto mb-10 w-16 border-b-3 border-grey-300"></div>
                                 <div class="flex mb-4 mx-auto transition duration-500 ease-in-out transform hover:-translate-y-1">
                                     <div onClick={this.toggleModal(modals[1])} class="w-full transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 cursor-pointer shadow-lg">
                                         <div class="flex items-center justify-center  bg-white  overflow-hidden">
