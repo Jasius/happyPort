@@ -1,20 +1,6 @@
 import React from 'react';
 
 function form () {
-    handleSubmit = e => {
-        e.preventDefault();
-        const form = e.target;
-        fetch("/", {
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({
-                "form-name": form.getAttribute("name"),
-                ...this.state
-            })
-        })
-            .then(() => navigateTo(form.getAttribute("action")))
-            .catch(error => alert(error));
-    };
     return (
         <div className="mx-auto max-w-6xl sm:p-12 p-8">
             <div className="shadow-lg bg-white p-8 flex flex-col md:flex-row justify-center">
@@ -25,7 +11,7 @@ function form () {
                     <div className="text-xl mt-4">I am on the lookout for any kind of meaningful work. If you have something in mind or just want to say hi, drop me a line.</div>
                 </div>
                 <div className="md:w-1/2 flex justify-start mt-5 md:justify-end w-full md:w-1/2">
-                    <form className="flex-auto max-w-sm p-8 pb-20" name="contact" action="/index" method="post" data-netlify="true" onSubmit={this.handleSubmit}>
+                    <form className="flex-auto max-w-sm p-8 pb-20" name="contact" action="/index" method="post" data-netlify="true">
                         <input type="hidden" name="contactForm" value="contact" />
                         <div className="w-full">
                             <div className="font-bold h-6 mt-3 text-gray-600 text-xs leading-8 uppercase">
