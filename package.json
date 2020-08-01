@@ -40,6 +40,6 @@
     "autoprefixer": "^9.8.6",
     "postcss-cli": "^7.1.1",
     "tailwindcss": "^1.6.0",
-    "postscss": "1.6.0"
+    "postcss": "7.0.32"
   }
 }
