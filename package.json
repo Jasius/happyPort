@@ -10,7 +10,9 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-modal": "^3.11.2",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "postcss-cli": "^7.1.1",
+    "postcss": "7.0.32"
   },
   "scripts": {
     "build:css": "npx postcss src/styles/index.css -o src/index.css",
@@ -37,8 +39,6 @@
   },
   "devDependencies": {
     "autoprefixer": "^9.8.6",
-    "postcss-cli": "^7.1.1",
-    "tailwindcss": "^1.6.0",
-    "postcss": "7.0.32"
+    "tailwindcss": "^1.6.0"
   }
 }
