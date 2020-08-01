@@ -1,7 +1,9 @@
 module.exports = {
-  purge: [
-    './src/**/*.js'
-  ],
+  purge: {
+    content: [
+      './src/*.js'
+    ],
+  },
   theme: {
     maxHeight: {
       '80': '80vh'
