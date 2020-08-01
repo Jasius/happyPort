@@ -1,0 +1,151 @@
+{
+    "projects": [
+        {
+            "name": "Bazaarvoice",
+            "year": 2018,
+            "imageUrl": "bazaarvoice",
+            "technologies": [
+                "React",
+                "Webpack",
+                "Sass",
+                "JS",
+                "Gulp",
+                "JQL",
+                "SQL",
+                "Bootstrap"
+            ],
+            "role": "Internal tools developer & QA Engineer",
+            "location": "Vilnius, Lithuania",
+            "description": "Bazaarvoice is a digital marketing company. It provides software that allows retailers to add customer reviews to their websites. Bazaarvoice is third biggest company in the world by CGC, behind Google and Facebook.",
+            "highlights": [
+                "Developed internal automation tool, scripts, extensions for QA team.",
+                "Leading QA team work distribution and estimation.",
+                "Supporting co-workers with technical knowledge and eliminating manual work programmatically wherever possible.",
+                "Contributing to various internal projects outside of my scope during free time.",
+                "Introduced new tab extension which provides various teams personalized tools and shortcuts to make jumping between tools a lot easier.",
+                "Extensive Jira, JQL support for QA and surrounding teams."
+            ]
+        },
+        {
+            "name": "Omnisend",
+            "year": 2017,
+            "imageUrl": "omnisend",
+            "technologies": [
+                "AngularJS",
+                "JS",
+                "Grunt",
+                "Gulp",
+                "Less",
+                "Sass",
+                "JQUERY"
+            ],
+            "role": "Front end developer",
+            "location": "Vilnius, Lithuania",
+            "description": "Powerful email marketing platform for eCommerce. Helps you to convert the visitors of your online store and retain your customers.",
+            "highlights": [
+                "Localized Omnisend service and took of ownership of internationalization.",
+                "Contributed to development of front facing marketing website and its campaigns.",
+                "Helped out co-workers with technical support queries internally."
+            ]
+        },
+        {
+            "name": "Microsoft Community",
+            "year": 2016,
+            "imageUrl": "w10",
+            "technologies": [
+                "Gulp",
+                "Sass",
+                "JS",
+                "Bootstrap",
+                "Jquery"
+            ],
+            "role": "Lead developer & Community manager",
+            "location": "Ignalina, Lithuania",
+            "description": "Community which is hosted on Reddit (design part), Discord platforms for Microsoft products and services enthusiasts.",
+            "highlights": [
+                "Lead developer for the community.",
+                "Verified Microsoft employees, journalists and prominent developers so that they can engage with the community on official capacity.",
+                "Recruited and mentored moderators for the community.",
+                "Theme without community specific branding got installed on over 1,900 communities since March of 2017 and due to that it was seen by thousands of users monthly.",
+                "Helping out people to install theme on their communities."
+            ]
+        },
+        {
+            "name": "Bookie.GG",
+            "year": 2015,
+            "imageUrl": "bookie",
+            "technologies": [
+                "CSS3",
+                "JS",
+                "Less",
+                "JQUERY"
+            ],
+            "role": "Junior web designer & Community manager",
+            "location": "Remote, Lithuania",
+            "description": "E-sports betting service which allows you to be t Counter-Strike: Global Offensive weapon skins on CS:GO e-sports matches.",
+            "highlights": [
+                "Supporting developer on the design team.",
+                "Designer and community manager on community forum.",
+                "Tester for our partner's e-sports statistics mobile application."
+            ]
+        },
+        {
+            "name": "PiPPY",
+            "year": 2018,
+            "imageUrl": "pippy",
+            "technologies": [
+                "JS"
+            ],
+            "role": "Developer",
+            "location": "Vilnius, Lithuania",
+            "description": "Chrome extension which utilizes native PiP (Picture in Picture) API, primarily made it for myself but it's now used by 7,7k users.",
+            "highlights": [
+                "Banking on experimental API which allowed me to get over two thousand users and spotlight from bloggers."
+            ]
+        }
+    ],
+    "testimonials": [
+        {
+            "avatar": "karolisN.png",
+            "reviewer": "Karolis N.",
+            "role": "Delivery Ops Lead",
+            "testimonial": "Thanks for all the improvements, amazing work on internal tool and constant technical help!",
+            "year": 2019
+        },
+        {
+            "avatar": "justeS.png",
+            "reviewer": "Juste S.",
+            "role": "Delivery Ops Manager",
+            "testimonial": "Thank you for your endless ideas of innovation and valuable input for every initiative you come up with or stumble upon, but also for keeping the team spirits up with relentless humour and OC memes! What a gem of a personality you are!",
+            "year": 2020
+        },
+        {
+            "avatar": "gintareS.jpg",
+            "reviewer": "Gintare S.",
+            "role": "Integration Tester",
+            "testimonial": "Thanks for everyday cooperation and all the work with dashboards that make our life more colourful!",
+            "year": 2019
+        },
+        {
+            "avatar": "tomasS.jpg",
+            "reviewer": "Tomas S.",
+            "role": "Implementation Manager",
+            "testimonial": "Thank you for your help on building QA Automation tool.",
+            "year": 2019
+        },
+        {
+            "avatar": "elvyraS.png",
+            "reviewer": "Elvyra S.",
+            "role": "Certification Specialist",
+            "testimonial": "Thanks for sharing your superpowers! :))",
+            "year": 2019
+        },
+        {
+            "avatar": "marthaY.jpg",
+            "reviewer": "Martha Y.",
+            "role": "Senior Engagement Manager",
+            "testimonial": "I think your formal title should be QA Master, QA Wizard.",
+            "year": 2019
+        }
+    ]
+}

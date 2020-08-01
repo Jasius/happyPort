@@ -1,23 +1,39 @@
 @tailwind base;
 @tailwind utilities;
 
+body {
+    background-image: url(./assets/img/techBackground.svg);
+}
+
+.testimonial-card:nth-of-type(1n + 4) {
+    animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes slide-in-top {
+    0% {
+        transform: translateY(-1000px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
 .ReactModal__Overlay {
     opacity: 0;
     transition: opacity 500ms ease-in-out;
 }
 
-.ReactModal__Overlay--after-open{
+.ReactModal__Overlay--after-open {
     opacity: 1;
 }
 
-.ReactModal__Overlay--before-close{
+.ReactModal__Overlay--before-close {
     opacity: 0;
 }
 
 .ReactModal__Body--open {
-  overflow-y: hidden;
-}
-
-body {
-    background-image: url(./assets/img/techBackground.svg);
+    overflow-y: hidden;
 }
