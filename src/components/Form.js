@@ -12,7 +12,7 @@ function form () {
                 </div>
                 <div className="md:w-1/2 flex justify-start md:justify-end w-full md:w-1/2">
                     <form name="contact" method="post" className="flex-auto md:max-w-sm md:px-8">
-                        <input type="hidden" name="submission-form" value="contact" />
+                        <input type="hidden" name="form-name" value="contact" />
                         <div className="w-full">
                             <div className="font-bold h-6 mt-3 text-gray-600 text-xs leading-8 uppercase">
                                 <span className="text-red-400 mr-1">*</span> First Name
