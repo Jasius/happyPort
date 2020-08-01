@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Modal from 'react-modal';
-import omnisend from '../assets/img/omnisend.png'
 
 const modals = ['modals[1]', 'modals[0]', 'modals[2]', 'modals[3]']
 
@@ -64,7 +63,7 @@ class Projects extends Component {
                                 <div class="flex mb-4 mx-auto transition duration-500 ease-in-out transform hover:-translate-y-1">
                                     <div onClick={this.toggleModal(modals[1])} class="w-full transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 cursor-pointer shadow-lg">
                                         <div class="flex items-center justify-center  bg-white  overflow-hidden">
-                                            <img class="object-cover" src="https://jaska.dev/bazaarvoice.618d8db4.png" alt="" />
+                                            <img class="object-cover" src="assets/img/bazaarvoice.png" alt="Bazaarvoice - Digital marketing project" />
                                         </div>
                                         <a class="block bg-secondaryBlue rounded-b overflow-hidden ">
                                             <div class="py-4 px-3 text-center text-sm">
@@ -128,7 +127,7 @@ class Projects extends Component {
                                     <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
                                         <div onClick={this.toggleModal(modals[0])} className="max-w-xs w-full transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 cursor-pointer shadow-lg">
                                             <div className="flex items-center justify-center  bg-white  overflow-hidden">
-                                                <img className="object-cover " src={omnisend} alt="" />
+                                                <img className="object-cover " src='/assets/img/omnisend.png' alt="Omnisend - Ecommerce marketing project" />
                                             </div>
                                             <a className="block bg-secondaryBlue rounded-b overflow-hidden ">
                                                 <div className="py-4 px-3 text-center text-sm">
@@ -188,7 +187,7 @@ class Projects extends Component {
                                         </Modal>
                                         <div onClick={this.toggleModal(modals[2])} className="max-w-xs w-full transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 cursor-pointer shadow-lg">
                                             <div className="flex items-center justify-center  bg-white  overflow-hidden">
-                                                <img className="object-cover " src="https://jaska.dev/w10.b2283865.png" alt="" />
+                                                <img className="object-cover " src="/assets/img/w10.png" alt="Microsoft Community - Social platform project" />
                                             </div>
                                             <a className="block bg-secondaryBlue rounded-b overflow-hidden ">
                                                 <div className="py-4 px-3 text-center text-sm">
@@ -248,7 +247,7 @@ class Projects extends Component {
                                         </Modal>
                                         <div onClick={this.toggleModal(modals[3])} className="max-w-xs w-full transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 cursor-pointer shadow-lg">
                                             <div className="flex items-center justify-center  bg-white  overflow-hidden">
-                                                <img className="object-cover " src="https://jaska.dev/bookie.8ad5942a.png" alt="" />
+                                                <img className="object-cover " src="/assets/img/bookie.png" alt="Bookie.GG - Gambling platform project" />
                                             </div>
                                             <a className="block bg-secondaryBlue rounded-b overflow-hidden ">
                                                 <div className="py-4 px-3 text-center text-sm">
