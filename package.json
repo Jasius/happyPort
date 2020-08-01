@@ -12,7 +12,9 @@
     "react-modal": "^3.11.2",
     "react-scripts": "3.4.1",
     "postcss-cli": "^7.1.1",
-    "postcss": "7.0.32"
+    "postcss": "7.0.32",
+    "autoprefixer": "^9.8.6",
+    "tailwindcss": "^1.6.0"
   },
   "scripts": {
     "build:css": "npx postcss src/styles/index.css -o src/index.css",
@@ -37,8 +39,5 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "autoprefixer": "^9.8.6",
-    "tailwindcss": "^1.6.0"
-  }
+  "devDependencies": {}
 }
