@@ -7,14 +7,13 @@
     "@testing-library/react": "^10.4.7",
     "@testing-library/user-event": "^12.1.0",
     "concurrently": "^5.2.0",
-    "postcss": "^7.0.32",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-modal": "^3.11.2",
     "react-scripts": "3.4.1"
   },
   "scripts": {
-    "build:css": "postcss src/styles/index.css -o src/index.css",
+    "build:css": "npx postcss src/styles/index.css -o src/index.css",
     "watch:css": "postcss src/styles/index.css -o src/index.css -w",
     "start": "concurrently \"npx react-scripts start\" \"npm run watch:css\"",
     "build": "npm run build:css && react-scripts build",
