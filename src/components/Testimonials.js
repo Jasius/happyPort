@@ -2,7 +2,7 @@ import React from 'react';
 import porfolioData from '../assets/portfolioData.json'
 
 const Testimonials = () => {
-    const testimonialTemplate = (testimonial) => <div className="max-w-md px-8 bg-white shadow-lg rounded-lg py-10 bg-opacity-25 testimonial-card">
+    const testimonialTemplate = (testimonial) => <div className="px-8 bg-white shadow-lg rounded-lg py-10 bg-opacity-25 testimonial-card">
         {testimonial?.avatar?.length > 0 &&
             <div className="flex justify-center">
                 <img className="w-20 h-20 object-cover rounded-full border-2 border-blue-600" loading="lazy" src={'assets/img/' + testimonial.avatar} alt={"Picture of " + testimonial.reviewer} />
