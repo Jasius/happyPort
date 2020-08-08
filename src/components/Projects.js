@@ -75,6 +75,11 @@ class Projects extends Component {
                                     <Modal className="main-modal fixed w-full h-100 inset-0 z-50 overflow-hidden flex justify-center items-center animated faster fadeIn"
                                         isOpen={currentModal === modals[1]}
                                         onAfterOpen={this.handleOnAfterOpenModal}
+                                        style={{
+                                            overlay: {
+                                                backgroundColor: '#343f5985'
+                                            }
+                                        }}
                                         onRequestClose={this.handleModalCloseRequest}>
                                         <div className="border bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
                                             <div className="max-h-80 py-4 text-left px-6">
@@ -139,6 +144,11 @@ class Projects extends Component {
                                         <Modal className="main-modal fixed w-full h-100 inset-0 z-50 overflow-hidden flex justify-center items-center animated faster fadeIn"
                                             isOpen={currentModal === modals[0]}
                                             onAfterOpen={this.handleOnAfterOpenModal}
+                                            style={{
+                                                overlay: {
+                                                    backgroundColor: '#343f5985'
+                                                }
+                                            }}
                                             onRequestClose={this.toggleModal(modals[0])}>
                                             <div className="border  bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
                                                 <div className="max-h-80 py-4 text-left px-6">
@@ -199,6 +209,11 @@ class Projects extends Component {
                                         <Modal className="main-modal fixed w-full h-100 inset-0 z-50 overflow-hidden flex justify-center items-center animated faster fadeIn"
                                             isOpen={currentModal === modals[2]}
                                             onAfterOpen={this.handleOnAfterOpenModal}
+                                            style={{
+                                                overlay: {
+                                                    backgroundColor: '#343f5985'
+                                                }
+                                            }}
                                             onRequestClose={this.toggleModal(modals[2])}>
                                             <div className="border bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
                                                 <div className="max-h-80 py-4 text-left px-6">
@@ -259,6 +274,11 @@ class Projects extends Component {
                                         <Modal className="main-modal fixed w-full h-100 inset-0 z-50 overflow-hidden flex justify-center items-center animated faster fadeIn"
                                             isOpen={currentModal === modals[3]}
                                             onAfterOpen={this.handleOnAfterOpenModal}
+                                            style={{
+                                                overlay: {
+                                                    backgroundColor: '#343f5985'
+                                                }
+                                            }}
                                             onRequestClose={this.toggleModal(modals[3])}>
                                             <div className="border  bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
                                                 <div className="max-h-80 py-4 text-left px-6">
