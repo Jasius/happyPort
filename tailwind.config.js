@@ -2,6 +2,7 @@ module.exports = {
   purge: {
     content: [
       './src/**/*.js',
+      './src/assets/portfolioData.json',
       './public/**/*.html',
     ],
   },
