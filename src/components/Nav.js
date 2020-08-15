@@ -1,5 +1,9 @@
 import React from 'react';
 import porfolioData from '../assets/portfolioData.json'
+import {
+    BrowserRouter as Router,
+    Link
+} from "react-router-dom";
 
 const getSocialLinks = () => {
     const icons = {
@@ -17,10 +21,17 @@ function nav () {
             <div className="container mx-auto px-6 py-4">
                 <div className="flex items-center justify-between text-gray-800">
                     <div>
-                        <a className="flex items-center hover:text-blue-600 ease-in-out duration-200" href="/">
-                            <img class="h-6 w-6 sm:h-6 sm:w-6" src="https://raw.githubusercontent.com/Jasius/Portfolio/master/src/assets/logo-Jaska.svg" alt="Personal logo" />
-                            <span className="mx-3 font-medium text-sm md:text-base">Mindaugas Jasiulis</span>
-                        </a>
+                        <ul class="flex flex-col md:flex-row md:items-center md:mx-0 md:mt-0 md:pt-0 md:mr-4 lg:mr-8 md:border-0">
+                            <li>
+                                <Link to="/" className="flex items-center hover:text-blue-600 ease-in-out duration-200" >
+                                    <img className="h-6 w-6 sm:h-6 sm:w-6" src="logo-Jaska.svg" alt="Personal brand logo" />
+                                    <span className="mx-3 font-medium text-sm md:text-base">Mindaugas Jasiulis</span>
+                                </Link>
+                            </li>
+                            <li className="hidden">
+                                <Link to="/about" className="mx-3 text-sm md:text-base" href="#" title="Link">About</Link>
+                            </li>
+                        </ul>
                     </div>
                     {getSocialLinks()}
                 </div>

@@ -1,5 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {
+  BrowserRouter as Router,
+  Route
+} from "react-router-dom";
 import './index.css';
 import Nav from './components/Nav';
 import Header from './components/Header';
@@ -11,12 +15,19 @@ import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Nav/>
-    <Header/>
-    <Projects />
-    <Testimonials />
-    <Form/>
-    <Footer/>
+    <Router>
+      <Nav />
+      <Route exact path="/about">
+        <Header />
+      </Route>
+      <Route exact path="/">
+        <Header />
+        <Projects />
+        <Testimonials />
+        <Form />
+      </Route>
+      <Footer />
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
