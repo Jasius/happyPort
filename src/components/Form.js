@@ -18,7 +18,7 @@ function form () {
                                 <span className="text-red-400 mr-1">*</span> First Name
                             </div>
                             <div className="my-2 bg-white p-1 flex border border-gray-300 rounded">
-                                <input placeholder="John Doe" type="text" name="name" className="p-1 px-2 appearance-none outline-none w-full text-gray-800" />
+                                <input placeholder="John Doe" type="text" name="name" required className="p-1 px-2 appearance-none outline-none w-full text-gray-800" />
                             </div>
                         </div>
                         <div className="w-full">
@@ -26,7 +26,7 @@ function form () {
                                 <span className="text-red-400 mr-1">*</span> Email
                             </div>
                             <div className="my-2 bg-white p-1 flex border border-gray-300 rounded">
-                                <input placeholder="JohnDoe@Outlook.com" type="email" name="email" className="p-1 px-2 appearance-none outline-none w-full text-gray-800" />
+                                <input placeholder="John.Doe@outlook.com" type="email" required name="email" className="p-1 px-2 appearance-none outline-none w-full text-gray-800" />
                             </div>
                         </div>
                         <div className="w-full">
@@ -34,7 +34,7 @@ function form () {
                                 <span className="text-red-400 mr-1" >*</span> Message
                             </div>
                             <div className="my-2 bg-white p-1 flex border border-gray-300 rounded">
-                                <textarea placeholder="Hi there!" name="message" className="p-1 px-2 appearance-none outline-none w-full text-gray-800" />
+                                <textarea placeholder="Hi there! Lets grab some coffee tonight." name="message" required className="p-1 px-2 appearance-none outline-none w-full text-gray-800" />
                             </div>
                         </div>
                         <div className="mt-6 relative">
