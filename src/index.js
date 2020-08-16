@@ -4,6 +4,7 @@ import {
   BrowserRouter as Router,
   Route
 } from "react-router-dom";
+import porfolioData from './assets/portfolioData.json'
 import './index.css';
 import Nav from './components/Nav';
 import Header from './components/Header';
@@ -23,7 +24,7 @@ ReactDOM.render(
       <Route exact path="/">
         <Header />
         <Projects />
-        <Testimonials />
+        {porfolioData.testimonials.length !== 0 && <Testimonials />}
         <Form />
       </Route>
       <Footer />
