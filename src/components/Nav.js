@@ -28,7 +28,7 @@ function nav () {
                                     <span className="mx-3 font-medium text-sm md:text-base">Mindaugas Jasiulis</span>
                                 </Link>
                             </li>
-                            <li className="hidden">
+                            <li className="">
                                 <Link to="/about" className="mx-3 text-sm md:text-base" href="#" title="Link">About</Link>
                             </li>
                         </ul>
