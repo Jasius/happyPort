@@ -25,7 +25,7 @@ function nav () {
                             <li>
                                 <Link to="/" className="flex items-center hover:text-blue-600 ease-in-out duration-200" >
                                     <img className="h-6 w-6 sm:h-6 sm:w-6" src="logo-Jaska.svg" alt="Personal brand logo" />
-                                    <span className="mx-3 font-medium text-sm md:text-base">Mindaugas Jasiulis</span>
+                                    <span className="mx-3 font-medium text-sm md:text-base">{porfolioData.profile.firstName} {porfolioData.profile.lastName}</span>
                                 </Link>
                             </li>
                             <li className="hidden">

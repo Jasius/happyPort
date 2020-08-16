@@ -1,4 +1,5 @@
 import React from 'react';
+import porfolioData from '../assets/portfolioData.json'
 
 function footer () {
     return (
@@ -6,7 +7,7 @@ function footer () {
             <div className="container mx-auto px-6 py-4">
                 <div className="flex justify-between items-center text-gray-600">
                     <div>
-                        <div>&copy; Mindaugas Jasiulis {new Date().getFullYear()}</div>
+                        <div>&copy; {porfolioData.profile.firstName} {porfolioData.profile.lastName} {new Date().getFullYear()}</div>
                     </div>
                     <div className="flex items-center -mx-2">
                         <a className="flex items-center mx-2 hover:text-blue-500 ease-in-out duration-200" href="https://twitter.com/JaskaJasius">
