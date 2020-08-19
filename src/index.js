@@ -4,6 +4,7 @@ import {
   BrowserRouter as Router,
   Route
 } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import porfolioData from './assets/portfolioData.json'
 import './index.css';
 import Nav from './components/Nav';
@@ -16,6 +17,11 @@ import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>My Title</title>
+      <link rel="canonical" href="http://mysite.com/example" />
+    </Helmet>
     <Router>
       <Nav />
       <Route exact path="/about">
