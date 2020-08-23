@@ -66,7 +66,7 @@ class Projects extends Component {
                             <a className="block bg-secondaryBlue rounded-b overflow-hidden ">
                                 <div className="py-4 px-3 text-center text-sm">
                                     <p className="text-gray-300 text-xl font-semibold">{porfolioData.projects[0].name}</p>
-                                    <span className="block text-gray-500">Internal tools developer & QA Engineer</span>
+                                    <span className="block text-gray-500">{porfolioData.projects[0].role}</span>
                                 </div>
                             </a>
                         </div>
