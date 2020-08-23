@@ -17,7 +17,7 @@ function footer () {
             <div className="container mx-auto px-6 py-4">
                 <div className="flex justify-between items-center text-gray-600">
                     <div>
-                        <div>&copy; Mindaugas Jasiulis {new Date().getFullYear()}</div>
+                        <div>&copy; {porfolioData.profile.firstName} {porfolioData.profile.lastName} {new Date().getFullYear()}</div>
                     </div>
                     {getSocialLinksFooter()}
                 </div>
