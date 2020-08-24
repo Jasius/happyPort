@@ -12,9 +12,9 @@
     },
     "projects": [
         {
-            "name": "Bazaarvoice",
+            "name": "Bazaarvoice - Digital marketing",
             "year": 2018,
-            "imageUrl": "bazaarvoice",
+            "imageUrl": "bazaarvoice.png",
             "technologies": [
                 "React",
                 "Webpack",
@@ -38,9 +38,9 @@
             ]
         },
         {
-            "name": "Omnisend",
+            "name": "Omnisend - Ecommerce marketing",
             "year": 2017,
-            "imageUrl": "omnisend",
+            "imageUrl": "omnisend.png",
             "technologies": [
                 "AngularJS",
                 "JS",
@@ -60,9 +60,9 @@
             ]
         },
         {
-            "name": "Microsoft Community",
+            "name": "Microsoft Community - Social platform",
             "year": 2016,
-            "imageUrl": "w10",
+            "imageUrl": "w10.png",
             "technologies": [
                 "Gulp",
                 "Sass",
@@ -82,9 +82,9 @@
             ]
         },
         {
-            "name": "Bookie.GG",
+            "name": "Bookie.GG - Gambling platform",
             "year": 2015,
-            "imageUrl": "bookie",
+            "imageUrl": "bookie.png",
             "technologies": [
                 "CSS3",
                 "JS",
@@ -98,20 +98,6 @@
                 "Supporting developer on the design team.",
                 "Designer and community manager on community forum.",
                 "Tester for our partner's e-sports statistics mobile application."
-            ]
-        },
-        {
-            "name": "PiPPY",
-            "year": 2018,
-            "imageUrl": "pippy",
-            "technologies": [
-                "JS"
-            ],
-            "role": "Developer",
-            "location": "Vilnius, Lithuania",
-            "description": "Chrome extension which utilizes native PiP (Picture in Picture) API, primarily made it for myself but it's now used by 7,7k users.",
-            "highlights": [
-                "Banking on experimental API which allowed me to get over two thousand users and spotlight from bloggers."
             ]
         }
     ],
