@@ -2,10 +2,7 @@ import React, { Component, Fragment } from 'react';
 import Modal from 'react-modal';
 import porfolioData from '../assets/portfolioData.json'
 
-const modals = []
-Object.keys(porfolioData.projects).map(x => modals.push(`modal[${x}]`))
-
-const DEFAULT_TITLE = 'Default title';
+const modals = Object.keys(porfolioData.projects).map(projectNumber => `modal[${projectNumber}]`)
 
 class Projects extends Component {
     componentDidMount () {
@@ -14,7 +11,7 @@ class Projects extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            title1: DEFAULT_TITLE,
+            title1: 'Modal',
             currentModal: null
         };
     }
@@ -29,7 +26,7 @@ class Projects extends Component {
         this.setState({
             ...this.state,
             currentModal: key,
-            title1: DEFAULT_TITLE
+            title1: 'Modal'
         });
     }
 
@@ -43,7 +40,7 @@ class Projects extends Component {
     handleInputChange = e => {
         let text = e.target.value;
         if (text === '') {
-            text = DEFAULT_TITLE;
+            text = 'Modal';
         }
         this.setState({ ...this.state, title1: text });
     }
