@@ -30,7 +30,7 @@ ReactDOM.render(
       <Route exact path="/">
         <Header />
         <Projects />
-        {porfolioData.testimonials.length !== 0 && <Testimonials />}
+        {portfolioData.testimonials.length !== 0 && <Testimonials />}
         <Form />
       </Route>
       <Footer />
