@@ -18,9 +18,9 @@ import * as serviceWorker from './serviceWorker';
 ReactDOM.render(
   <React.StrictMode>
     <Helmet>
-      <meta charSet="utf-8" />
-      <title>My Title</title>
-      <link rel="canonical" href="http://mysite.com/example" />
+      <title>{portfolioData.profile.firstName} {portfolioData.profile.lastName} - Portfolio</title>
+      <meta content={portfolioData.profile.firstName + " " + portfolioData.profile.lastName + " - Portfolio"} property="og:title" />
+      <meta name="Description" content={portfolioData.profile.websiteDescription} property="og:description" />
     </Helmet>
     <Router>
       <Nav />
