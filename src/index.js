@@ -5,7 +5,7 @@ import {
   Route
 } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import porfolioData from './assets/portfolioData.json'
+import portfolioData from './assets/portfolioData.json'
 import './index.css';
 import Nav from './components/Nav';
 import Header from './components/Header';
