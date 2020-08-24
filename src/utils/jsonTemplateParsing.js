@@ -1,5 +1,3 @@
-import React from 'react';
-
 export const stringTemplateParser = (expression, valueObj, html) => {
     const templateMatcher = /{{\s?([^{}\s]*)\s?}}/g;
     let template = expression.replace(templateMatcher, (substring, value, index) => {

@@ -2,10 +2,7 @@ import React, { Component, Fragment } from 'react';
 import Modal from 'react-modal';
 import porfolioData from '../assets/portfolioData.json'
 
-const modals = []
-Object.keys(porfolioData.projects).map(x => modals.push(`modal[${x}]`))
-
-const DEFAULT_TITLE = 'Default title';
+const modals = Object.keys(porfolioData.projects).map(projectNumber => `modal[${projectNumber}]`)
 
 class Projects extends Component {
     componentDidMount () {
@@ -14,7 +11,7 @@ class Projects extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            title1: DEFAULT_TITLE,
+            title1: 'Modal',
             currentModal: null
         };
     }
@@ -29,7 +26,7 @@ class Projects extends Component {
         this.setState({
             ...this.state,
             currentModal: key,
-            title1: DEFAULT_TITLE
+            title1: 'Modal'
         });
     }
 
@@ -43,7 +40,7 @@ class Projects extends Component {
     handleInputChange = e => {
         let text = e.target.value;
         if (text === '') {
-            text = DEFAULT_TITLE;
+            text = 'Modal';
         }
         this.setState({ ...this.state, title1: text });
     }
@@ -63,12 +60,12 @@ class Projects extends Component {
                             <div className="flex items-center justify-center  bg-white  overflow-hidden">
                                 <img className="object-cover" src={'assets/img/' + porfolioData.projects[0].imageUrl} alt={'Image of ' + porfolioData.projects[0].name} />
                             </div>
-                            <a className="block bg-secondaryBlue rounded-b overflow-hidden ">
+                            <div className="block bg-secondaryBlue rounded-b overflow-hidden ">
                                 <div className="py-4 px-3 text-center text-sm">
                                     <p className="text-gray-300 text-xl font-semibold">{porfolioData.projects[0].name}</p>
                                     <span className="block text-gray-500">{porfolioData.projects[0].role}</span>
                                 </div>
-                            </a>
+                            </div>
                         </div>
                         <Modal className="main-modal fixed w-full h-100 inset-0 z-50 overflow-hidden flex justify-center items-center animated faster fadeIn"
                             isOpen={currentModal === modals[0]}
@@ -138,12 +135,12 @@ class Projects extends Component {
                             <div className="flex items-center justify-center  bg-white  overflow-hidden">
                                 <img className="object-cover " src={'/assets/img/' + image} alt={projectName + ' project'} />
                             </div>
-                            <a className="block bg-secondaryBlue rounded-b overflow-hidden ">
+                            <div className="block bg-secondaryBlue rounded-b overflow-hidden ">
                                 <div className="py-4 px-3 text-center text-sm">
                                     <p className="text-gray-300 text-base font-semibold">{projectName}</p>
                                     <span className="block text-gray-500">{role}</span>
                                 </div>
-                            </a>
+                            </div>
                         </div>
                         <Modal className="main-modal fixed w-full h-100 inset-0 z-50 overflow-hidden flex justify-center items-center animated faster fadeIn"
                             isOpen={currentModal === modals[key]}
