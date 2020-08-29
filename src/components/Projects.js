@@ -58,7 +58,7 @@ class Projects extends Component {
                     <div className="flex mb-4 mx-auto transition duration-500 ease-in-out transform hover:-translate-y-1">
                         <div onClick={this.toggleModal(modals[0])} className="w-full transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 cursor-pointer shadow-lg">
                             <div className="flex items-center justify-center  bg-white  overflow-hidden">
-                                <img className="object-cover" src={'assets/img/' + porfolioData.projects[0].imageUrl} alt={'Image of ' + porfolioData.projects[0].name} />
+                                <img className="object-cover" loading="lazy" src={'assets/img/' + porfolioData.projects[0].imageUrl} alt={'Image of ' + porfolioData.projects[0].name} />
                             </div>
                             <div className="block bg-secondaryBlue rounded-b overflow-hidden ">
                                 <div className="py-4 px-3 text-center text-sm">
@@ -133,7 +133,7 @@ class Projects extends Component {
                     <Fragment key={key}>
                         <div onClick={this.toggleModal(modals[key])} className="max-w-xs w-full transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 cursor-pointer shadow-lg">
                             <div className="flex items-center justify-center  bg-white  overflow-hidden">
-                                <img className="object-cover " src={'/assets/img/' + image} alt={projectName + ' project'} />
+                                <img className="object-cover" loading="lazy" src={'/assets/img/' + image} alt={projectName + ' project'} />
                             </div>
                             <div className="block bg-secondaryBlue rounded-b overflow-hidden ">
                                 <div className="py-4 px-3 text-center text-sm">
