@@ -10,6 +10,9 @@ module.exports = {
     maxHeight: {
       '80': '80vh'
     },
+    minWidth: {
+      '48': '12rem'
+    },
     extend: {
       colors: {
         'primaryBlue': '#2d4059',
