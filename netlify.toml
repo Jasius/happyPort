@@ -1,0 +1,2 @@
+  publish = "/build"
+  command = "npm run build:css && react-scripts build"
