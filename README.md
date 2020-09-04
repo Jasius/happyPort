@@ -3,6 +3,6 @@
 # How to use
 1. Click the deploy button so that portfolio gets forked and deployed on Netlify
 
-[![Deploy site to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/jasius/happyport#CI=false&NODE_ENV=production)
+[![Deploy site to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/jasius/happyport)
 
 2. Add your data to `src/assets/portfolioData.json` and images to `public/assets/img/`
