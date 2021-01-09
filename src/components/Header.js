@@ -7,7 +7,7 @@ function Header () {
     return (
         <section className="m-10 lg:m-20">
             <div className="flex mx-auto max-w-screen-md">
-                <div className="lg:block hidden">
+                <div className="hidden">
                     <img src="assets/img/jaska.png" loading="eager" className="h-48 min-w-48 bg-cover shadow-lg rounded-full border-solid border-2 border-blue-600 flex items-center justify-center overflow-hidden" alt="Personal profile"/>
                 </div>
                 <div className="lg:ml-6">
